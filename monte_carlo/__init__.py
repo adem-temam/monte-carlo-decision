@@ -17,9 +17,21 @@ from monte_carlo.engine import (
     MonteCarloSimulator,
     SimulationResult,
 )
+from monte_carlo.metrics import (
+    RiskMetrics,
+    SummaryStatistics,
+    compute_risk_metrics,
+    compute_summary,
+    format_comparison_summary,
+)
 from monte_carlo.model import (
     Strategy,
     UncertainVariable,
+)
+from monte_carlo.sensitivity import (
+    VariableSensitivity,
+    analyze_sensitivity,
+    format_tornado_chart,
 )
 
 __version__ = "0.1.0"
@@ -35,4 +47,12 @@ __all__ = [
     "MonteCarloSimulator",
     "SimulationResult",
     "ComparisonResult",
+    "SummaryStatistics",
+    "RiskMetrics",
+    "compute_summary",
+    "compute_risk_metrics",
+    "format_comparison_summary",
+    "VariableSensitivity",
+    "analyze_sensitivity",
+    "format_tornado_chart",
 ]
