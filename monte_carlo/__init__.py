@@ -28,6 +28,13 @@ from monte_carlo.model import (
     Strategy,
     UncertainVariable,
 )
+from monte_carlo.plots import (
+    plot_decision_dashboard,
+    plot_distributions,
+    plot_ecdf,
+    plot_payoff_delta,
+    plot_tornado,
+)
 from monte_carlo.sensitivity import (
     VariableSensitivity,
     analyze_sensitivity,
@@ -55,4 +62,9 @@ __all__ = [
     "VariableSensitivity",
     "analyze_sensitivity",
     "format_tornado_chart",
+    "plot_distributions",
+    "plot_ecdf",
+    "plot_payoff_delta",
+    "plot_tornado",
+    "plot_decision_dashboard",
 ]
