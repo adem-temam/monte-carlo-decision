@@ -35,6 +35,10 @@ from monte_carlo.plots import (
     plot_payoff_delta,
     plot_tornado,
 )
+from monte_carlo.scenarios import (
+    get_cloud_scenario,
+    get_manufacturing_scenario,
+)
 from monte_carlo.sensitivity import (
     VariableSensitivity,
     analyze_sensitivity,
@@ -67,4 +71,6 @@ __all__ = [
     "plot_payoff_delta",
     "plot_tornado",
     "plot_decision_dashboard",
+    "get_manufacturing_scenario",
+    "get_cloud_scenario",
 ]
