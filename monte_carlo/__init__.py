@@ -12,6 +12,15 @@ from monte_carlo.distributions import (
     Triangular,
     Uniform,
 )
+from monte_carlo.engine import (
+    ComparisonResult,
+    MonteCarloSimulator,
+    SimulationResult,
+)
+from monte_carlo.model import (
+    Strategy,
+    UncertainVariable,
+)
 
 __version__ = "0.1.0"
 __all__ = [
@@ -21,4 +30,9 @@ __all__ = [
     "Triangular",
     "LogNormal",
     "Constant",
+    "UncertainVariable",
+    "Strategy",
+    "MonteCarloSimulator",
+    "SimulationResult",
+    "ComparisonResult",
 ]
